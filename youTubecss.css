@@ -1,0 +1,61 @@
+
+body{
+    background-color: white;
+}.youTube-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 20px;
+    overflow: hidden;
+    place-items: center;
+}
+.contentY{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.contentY:hover{
+    background-color: crimson;
+    color: #fff;
+    overflow: hidden;
+    transform: scale(1.1);
+}
+.navlist{
+    z-index: 1;
+}
+.menu{
+    z-index: 2;
+}
+@media  (max-width:990px) {
+    .navlist{
+        position: absolute;top: 0;
+    right: 0;
+    }
+    .navlist.active{
+        width: 40%;
+       }
+}
+@media  (max-width:690px) {
+    
+    .navlist.active{
+        width: 70%;
+       }
+       .navlist a{
+     
+        font-size: 30px;
+
+       }
+}
+@media  (max-width:490px) {
+    
+    .navlist.active{
+        width: 60%;
+       }
+       .navlist a{
+     
+        font-size: 20px;
+
+       }
+}

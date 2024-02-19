@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class', /* 'class' or 'media', we use 'class' to enable dark mode manually */
+        }
+    </script>
+    <script>
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+
+<body class="dark:text-white dark:bg-slate-900">
+    <header class="dark:bg-slate-900">
+        <div class="logo dark:text-white">
+            <a class="dark:text-white " href="#">Sandeep<span>S</span></a>
+        </div>
+        <div class="navlist dark:bg-slate-900">
+            <button id="theme-toggle" type="button"
+                class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4
+    
+     11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <li><a class="dark:text-white" href="#home">Home </a></li>
+            <li><a class="dark:text-white" href="#services">Services</a></li>
+            <li><a class="dark:text-white" href="#projects">Projects</a></li>
+            <li><a class="dark:text-white" href="#about">About</a></li>
+            <li><a class="dark:text-white" href="#contact">Contacts</a></li>
+            <li><a class="dark:text-white" href="#tutorials">Turorials</a></li>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <section class="home dark:bg-slate-800 dark:text-black" id="home">
+        <div class="home-text">
+            <h3>Hello I'am</h3>
+            <h1>Sandeep Singh</h1>
+            <h2>A Frontend Web Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias delectus error, possimus consectetur
+                vero laborum provident pariatur impedit. Aut enim corrupti et perferendis deleniti impedit cupiditate.
+                Perspiciatis veniam itaque voluptates.</p>
+            <div class="homeLinks">
+                <a href="/youTube.html">YouTube Content </a>
+                <a href="imges/sandeepHadiyal.pdf" download="sandeep_resume">Resume</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="imges/img1.png" alt="">
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="head">
+            <h2>Services</h2>
+        </div>
+        <div class="service-content">
+            <div class="content text-black dark:text-white dark:bg-gray-800 ">
+                <i class="fas fa-heart dark:text-none"></i>
+                <h4>Web Design</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem explicabo, fuga labore perspiciatis
+                minus sequi molestiae odio a sit cupiditate iste velit ex distinctio similique numquam. Ab eos ex
+                blanditiis.
+            </div>
+            <div class="content text-black dark:text-white dark:bg-gray-800">
+                <i class="fas fa-code"></i>
+                <h4>Web Developement</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem explicabo, fuga labore perspiciatis
+                minus sequi molestiae odio a sit cupiditate iste velit ex distinctio similique numquam. Ab eos ex
+                blanditiis.
+            </div>
+            <div class="content text-black dark:text-white dark:bg-gray-800">
+                <i class="fas fa-mobile"></i>
+                <h4>Mobile Developement</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem explicabo, fuga labore perspiciatis
+                minus sequi molestiae odio a sit cupiditate iste velit ex distinctio similique numquam. Ab eos ex
+                blanditiis.
+            </div>
+            <div class="content text-black dark:text-white dark:bg-gray-800">
+                <i class="fas fa-server"></i>
+                <h4>Web Hosting</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem explicabo, fuga labore perspiciatis
+                minus sequi molestiae odio a sit cupiditate iste velit ex distinctio similique numquam. Ab eos ex
+                blanditiis.
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="head">
+            <h2>Projects</h2>
+        </div>
+        <div class="projects-content">
+            <div class="p-content">
+                <img src="imges/project-1img.png" alt="">
+                <div class="text dark:bg-slate-800 dark:hover:bg-slate-800">
+                    <h3>Project 1</h3>
+                    <p>Greenade Website</p>
+                </div>
+            </div>
+            <div class="p-content">
+                <img src="imges/p2.jpg" alt="">
+                <div class="text  dark:bg-slate-800 dark:hover:bg-slate-800">
+                    <h3>Project 2</h3>
+                    <p>Hospital Website</p>
+                </div>
+            </div>
+            <div class="p-content">
+                <img src="imges/p3.jpg" alt="">
+                <div class="text  dark:bg-slate-800 dark:hover:bg-slate-800">
+                    <h3>Project 3</h3>
+                    <p>Hospital Website</p>
+                </div>
+            </div>
+            <div class="p-content">
+                <img src="imges/p4.jpg" alt="">
+                <div class="text  dark:bg-slate-800 dark:hover:bg-slate-800">
+                    <h3>Project 4</h3>
+                    <p>Hospital Website</p>
+                </div>
+            </div>
+            <div class="p-content">
+                <img src="imges/p5.jpg" alt="">
+                <div class="text  dark:bg-slate-800 dark:hover:bg-slate-800">
+                    <h3>Project 5</h3>
+                    <p>Hospital Website</p>
+                </div>
+            </div>
+            <div class="p-content">
+                <img src="imges/p6.jpg" alt="">
+                <div class="text  dark:bg-slate-800 dark:hover:bg-slate-800">
+                    <h3>Project 6</h3>
+                    <p>Hospital Website</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="head">
+            <h2>About</h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-img">
+                <img src="imges/img1.png" alt="">
+            </div>
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto autem officia delectus
+                    labore, dolorum, obcaecati praesentium nobis blanditiis quae tenetur eveniet pariatur rerum magnam?
+                    Facere eaque temporibus tempore laboriosam!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="head">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact-info">
+            <div class="contact-icon-info">
+                <div class="contact-icon">
+                    <i class="fas fa-location-dot"></i>
+                    <p>Churu, Rajsthan</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                    <p>Hadiyal843@gmail.com</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="fas fa-location"></i>
+                    <p>Churu, Rajsthan</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 7726092371</p>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="input">
+                    <input type="text" class=" dark:bg-slate-800 px-2" placeholder="Enter your full name">
+                    <input type="email" class=" dark:bg-slate-800 px-2" name="" id="" placeholder="Enter your email">
+                </div>
+                <textarea class="dark:bg-slate-800 px-2 py-2" placeholder="Leave me a message" name="" id="" cols="30"
+                    rows="10"></textarea>
+                <button type="submit" class="dark:border-black dark:hover:bg-slate-800 text-black  ">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="dark:bg-slate-800">
+        <p>Copyright &copy; 2024 | Belivers Code </p>
+        <br>
+        
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
+        var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+
+        // Change the icons inside the button based on previous settings
+        if (
+            localStorage.getItem("color-theme") === "dark" ||
+            (!("color-theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            themeToggleLightIcon.classList.remove("hidden");
+        } else {
+            themeToggleDarkIcon.classList.remove("hidden");
+        }
+
+        var themeToggleBtn = document.getElementById("theme-toggle");
+
+        themeToggleBtn.addEventListener("click", function () {
+            // Toggle icons inside button
+            themeToggleDarkIcon.classList.toggle("hidden");
+            themeToggleLightIcon.classList.toggle("hidden");
+
+            // If set via local storage previously
+            if (localStorage.getItem("color-theme")) {
+                if (localStorage.getItem("color-theme") === "light") {
+                    document.documentElement.classList.add("dark");
+                    localStorage.setItem("color-theme", "dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                    localStorage.setItem("color-theme", "light");
+                }
+
+                // If NOT set via local storage previously
+            } else {
+                if (document.documentElement.classList.contains("dark")) {
+                    document.documentElement.classList.remove("dark");
+                    localStorage.setItem("color-theme", "light");
+                } else {
+                    document.documentElement.classList.add("dark");
+                    localStorage.setItem("color-theme", "dark");
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
