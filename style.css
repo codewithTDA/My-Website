@@ -204,11 +204,18 @@ section{
 }
 
 /* contact */
-.contact-info{
+/* .contact-info{
   display: flex;
   align-items: center; 
   width: 100%;
   justify-content: space-evenly;
+} */
+.contact-info{
+       display: grid;
+       width: 100%;
+       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+       gap: 20px;
+       place-items: center;
 }
 .contact-icon{
     display: flex;
