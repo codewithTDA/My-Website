@@ -14,6 +14,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/feedback-ui.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -211,15 +212,31 @@
                 </div>
                 <textarea class="dark:bg-slate-800 px-2 py-2" placeholder="Leave me a message" name="" id="" cols="30"
                     rows="10"></textarea>
-                <button type="submit" class="dark:border-black dark:hover:bg-slate-800 text-black  ">Submit</button>
+                <button type="submit" class="dark:border-black dark:hover:bg-slate-800 text-black dark:text-white ">Submit</button>
             </form>
+            <div class="feedback_container" id="feedback_container">
+                <h1 class="feedback_heading" >Feedback UI</h1>
+                <div class="feedback_ratings-container" id="feedback_ratings-container">
+                    <div class="feedback_rating">
+                        <img src="https://cdn-icons-png.flaticon.com/128/166/166527.png" alt="unhappy">
+                        <small>Uphappy</small>
+                    </div>
+                    <div class="feedback_rating">
+                        <img src="https://cdn-icons-png.flaticon.com/128/725/725085.png" alt="unhappy">
+                        <small>Neutral</small>
+                    </div>
+                    <div class="feedback_rating">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2584/2584606.png" alt="unhappy">
+                        <small>Satisfied</small>
+                    </div>
+                </div>
+                <button class="feedback_btn" id="feedback_btn" >Send Review</button>
+            </div>
         </div>
     </section>
 
     <footer class="dark:bg-slate-800">
         <p>Copyright &copy; 2024 | Belivers Code </p>
-        <br>
-        
     </footer>
     <script src="script.js"></script>
     <script>
@@ -266,6 +283,10 @@
             }
         });
     </script>
+
+
+
+<script src="js/feeback.js" ></script>
 
 </body>
 
