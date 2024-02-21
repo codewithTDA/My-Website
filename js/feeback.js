@@ -7,8 +7,8 @@ ratingEls.forEach(ratingEl => {
    ratingEl.addEventListener('click',(e)=>{
        removeActive();
           selectedRating =  e.target.innerText || e.target.parentNode.innerText;
-          event.target.classList.add("active");
-          event.target.parentNode.classList.add("active");
+          e.target.classList.add("active");
+          e.target.parentNode.classList.add("active");
    })
 });
 btnEl.addEventListener('click',(e)=>{

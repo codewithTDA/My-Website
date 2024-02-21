@@ -1,3 +1,5 @@
+
+console.log("js exicuts");
 const header =  document.querySelector('header');
 const menu = document.querySelector('.fa-bars');
 const navlist = document.querySelector('.navlist');
