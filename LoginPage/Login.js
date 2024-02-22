@@ -23,7 +23,8 @@ login.onclick = (e) => {
     if (usernameAddress == getUser && passwordAddress == getPass) {
      
         showAlert(`Login successfull, hi ${usernameAddress}`,'success');
-        window.location.assign('/My-Website/My-Website/index.html')
+        // window.location.assign('/My-Website/My-Website/')
+        window.history.go(-2)
     } else {
       showAlert("Something is wrong",'danger');
     }
