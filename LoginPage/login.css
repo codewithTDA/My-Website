@@ -12,7 +12,7 @@
     position: relative;
   }
   form {
-    max-width: 450%;
+    /* max-width: 450px; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,4 +93,24 @@
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media  (max-width:700px){
+   form{
+    width: 500px;
+    background: transparent;
+    border: 1px solid white;
+   }
+   #form h1{
+    color: wheat;
+   }
+   #form h1::after{
+    background: wheat;
+   }
+}
+
+@media  (max-width:700px){
+  #form{
+    padding: 10;margin: 10;
+  }
 }
