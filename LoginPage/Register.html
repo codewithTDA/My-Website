@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <form action="" id="form">
+      <form action="" id="form">
+          <h1 id="title">Registration Form</h1>
           <div class="box">
-            <h1>Registration Form</h1>
-            <label for="username">Username:</label>
-            <input id="username" name="username" type="text">
+            <i class="fa-solid fa-user"></i>
+            <!-- <label for="username">Username:</label> -->
+            <input id="username" name="username" type="text" placeholder="Enter UserName" >
             <div class="error"></div>
           </div>
           <div class="box">
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="text">
+            <i class="fa-solid fa-envelope"></i>
+            <!-- <label for="email">Email:</label> -->
+            <input id="email" name="email" type="text" placeholder="Enter Email" >
             <div class="error"></div>
           </div>
           <div class="box">
-            <label for="password">Password:</label>
-            <input id="password" name="password" type="password">
+            <!-- <label for="password">Password:</label> -->
+            <i class="fa-solid fa-lock"></i>
+            <input id="password" name="password" type="password" placeholder="Set password" >
             <div class="error"></div>
           </div>
           <div class="box">
-            <label for="password">Confirm Password:</label>
-            <input id="psw" name="psw" type="password">
+            <!-- <label for="password">Confirm Password:</label> -->
+            <i class="fa-solid fa-lock"></i>
+            <input id="psw" name="psw" type="password" placeholder="Confirm Password" >
             <div class="error"></div>
           </div>
           <button type="submit" id="btn">Register Now</button>
