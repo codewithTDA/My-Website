@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh; 
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8));
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+    width: 100vw;
+    /* height: auto; */
+    padding: 10px;
+    
+  }
+  #failure,#success{
+    width: 100vw;
+  }
+
+  .OuterBox{
+    width: 70%;
+    /* width: auto; */
+    border: 2px solid pink;
+    border-radius: 10px;
+    background-color: #504949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #title{
+    /* align-items: center; */
+     margin: auto;
+     color: white;
+  }
+  form {
+  
+    background-color: #fff;
+    padding: 30px 30px 30px;
+    /* text-align: center; */
+  }
+  /* .box {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+  .box input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 13px 10px;
+    box-shadow: none;
+  } */
+   /* i{
+    margin-left: 10px;color: #999;
+  }
+   input:focus {
+    outline: 0;
+    border: 0;
+  } */
+@media screen and (max-width:700px) {
+  .OuterBox{
+    flex-direction: column;
+  }
+  body{
+    height: auto;
+    padding: 30px;
+  }
+}
+@media screen and (max-width:600px) {
+ .OuterBox{
+  width: 100%;
+  border:none;
+  border-radius: 0;
+  
+ }
+
+ body{
+  padding: 0;
+ }
+}

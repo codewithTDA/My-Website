@@ -4,8 +4,10 @@ login.onclick = (e) => {
     e.stopPropagation()
   const usernameAddress = document.getElementById("username").value;
   const passwordAddress = document.getElementById("password").value;
-  const getUser = localStorage.getItem("Username");
+  const getUser = localStorage.getItem("Name");
   const getPass = localStorage.getItem("Password");
+  let done = localStorage.getItem('Done');
+
 
 //   if (usernameAddress == "" && passwordAddress == "") {
 //     swal("Input field has no value");
@@ -20,7 +22,7 @@ login.onclick = (e) => {
     // swal("Input field has no value");
     console.log("somthing has no value");
   } else {
-    if (usernameAddress == getUser && passwordAddress == getPass) {
+    if (usernameAddress == getUser && passwordAddress == getPass && done==='True') {
      
         showAlert(`Login successfull, hi ${usernameAddress}`,'success');
         window.location.assign('https://codewithtda.github.io/My-Website/')

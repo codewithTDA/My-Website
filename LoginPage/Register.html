@@ -1,47 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="register.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <div class="container">
-      <form action="" id="form">
-          <h1 id="title">Registration Form</h1>
-          <div class="box">
-            <i class="fa-solid fa-user"></i>
-            <!-- <label for="username">Username:</label> -->
-            <input id="username" name="username" type="text" placeholder="Enter UserName" >
-            <div class="error"></div>
-          </div>
-          <div class="box">
-            <i class="fa-solid fa-envelope"></i>
-            <!-- <label for="email">Email:</label> -->
-            <input id="email" name="email" type="text" placeholder="Enter Email" >
-            <div class="error"></div>
-          </div>
-          <div class="box">
-            <!-- <label for="password">Password:</label> -->
-            <i class="fa-solid fa-lock"></i>
-            <input id="password" name="password" type="password" placeholder="Set password" >
-            <div class="error"></div>
-          </div>
-          <div class="box">
-            <!-- <label for="password">Confirm Password:</label> -->
-            <i class="fa-solid fa-lock"></i>
-            <input id="psw" name="psw" type="password" placeholder="Confirm Password" >
-            <div class="error"></div>
-          </div>
-          <button type="submit" id="btn">Register Now</button>
-          <div class="link">
-            <a href="login.html">Already have an account</a>
-          </div>
-        </form>
+  <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+    <strong>Success!</strong> Your travel request has been successfully submitted
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+    <strong>Error!</strong> Your travel request has not been sent due to errors
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="OuterBox">
+
+    <h1 id="title">Registration<br/> Form(signUp)</h1>
+    <form action="" id="form" class="container">
+
+
+
+      <div class="form-group">
+        <label for="user">Username</label>
+        <div class="input-group mb-3" >
+          <span class="input-group-text" id="user-addon"> <i class="fa-solid fa-envelope"></i></span>
+          <input type="text" class="form-control" id="user" placeholder="Enter your username">
+          <small id="namevalid" class="form-text text-danger invalid-feedback">Your username must be 2-10 characters long and should not start with a number</small>
+        </div>
       </div>
-      <!-- <script src="./sweetalert.js"></script> -->
-      <script src="Register.js"></script>
+
+      <div class="form-group">
+        <label for="email">Email address</label>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="user-addon"> 
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="text" class="form-control" id="email" placeholder="Enter your email">
+          <small id="emailvalid" class="form-text text-danger invalid-feedback">
+            Your email must be a valid email
+          </small>
+        </div>
+
+    
+      </div>
+      <div class="form-group">
+        <label for="pass">Enter Password</label>
+        <div class="input-group mb-3 ">
+         <span class="input-group-text" id="user-addon">      <i class="fa-solid fa-lock"></i> </span>
+          <input type="password" class="form-control" id="pass" placeholder="Enter Password">
+          <small id="passvalid" class="form-text text-danger invalid-feedback">
+            Your email must be a valid email
+          </small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cpass">Conform Password</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="user-addon">  <i class="fa-solid fa-lock"></i></span>
+          <input type="password" class="form-control" id="cpass" placeholder="Comfrom Password">
+          <small id="cpassvalid" class="form-text text-danger invalid-feedback">
+            Your email must be a valid email
+          </small>
+        </div>
+      </div>
+      <!-- <div class="form-group">
+                <label for="car">Select your car</label>
+                <select class="form-control" id="car">
+                    <option>Omni</option>
+                    <option>Maruti 800</option>
+                    <option>Ford Titanium</option>
+                    <option>Audi A4</option>
+                </select>
+            </div> -->
+
+      <div class="form-group">
+        <label for="phone">Enter your phone number</label>
+        <input class="form-control" name="phone" id="phone" rows="3">
+        <small id="emailvalid" class="form-text text-danger invalid-feedback">
+          ** Your phone number must be 10 digit long
+        </small>
+      </div>
+
+      <button id="submit" class="btn btn-primary">Submit</button>
+      <button id="reset" type="reset" class="btn btn-primary">Reset</button>
+    </form>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="Register.js"></script>
 </body>
+
 </html>
