@@ -25,7 +25,7 @@ menu.addEventListener('click',()=>{
 // })
 var links = [
     'https://codewithtda.github.io/greenade/',
-    'https://google.com',
+    'https://codewithtda.github.io/QRCodeGenerator/',
     'https://facebook.com',
     'https://google.com',
     'https://google.com',
