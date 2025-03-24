@@ -49,6 +49,7 @@
      11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                 </svg>
             </button>
+
             <li><a class="dark:text-white" href="#home">Home </a></li>
             <li><a class="dark:text-white" href="#services">Services</a></li>
             <li><a class="dark:text-white" href="#projects">Projects</a></li>
@@ -56,6 +57,7 @@
             <li><a class="dark:text-white" href="#contact">Contacts</a></li>
             <li><a class="dark:text-white" href="#tutorials">Turorials</a></li>
             <li><a href="./LoginPage/Register.html" class="dark:text-white ">Login</a></li>
+
         </div>
         <div class="menu">
             <i class="fas fa-bars"></i>
@@ -206,17 +208,21 @@
                 </div>
             </div>
 
-            <form action="">
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
                 <div class="input">
-                    <input type="text" class=" dark:bg-slate-800 px-2" placeholder="Enter your full name">
-                    <input type="email" class=" dark:bg-slate-800 px-2" name="" id="" placeholder="Enter your email">
+                    <input type="hidden" name="access_key" value="44ba81bd-ffff-400d-9a43-3bf0f690512d" required >
+                    <input type="text" name="name" class=" dark:bg-slate-800 px-2" placeholder="Enter your full name" required>
+                    <input type="email" class=" dark:bg-slate-800 px-2" name="email" id=""
+                        placeholder="Enter your email" required>
                 </div>
-                <textarea class="dark:bg-slate-800 px-2 py-2" placeholder="Leave me a message" name="" id="" cols="30"
-                    rows="10"></textarea>
-                <button type="submit" class="dark:border-black dark:hover:bg-slate-800 text-black dark:text-white ">Submit</button>
+                <textarea class="dark:bg-slate-800 px-2 py-2" placeholder="Leave me a message" name="textarea" id=""
+                    cols="30" rows="10"></textarea>
+                <button type="submit" class="dark:border-black dark:hover:bg-slate-800  dark:text-white ">Submit <img
+                        src="./imges/arrow_icon.png" alt="">
+                </button>
             </form>
             <div class="feedback_container" id="feedback_container">
-                <h1 class="feedback_heading" >Feedback UI</h1>
+                <h1 class="feedback_heading">Feedback UI</h1>
                 <div class="feedback_ratings-container" id="feedback_ratings-container">
                     <div class="feedback_rating">
                         <img src="https://cdn-icons-png.flaticon.com/128/166/166527.png" alt="unhappy">
@@ -231,24 +237,24 @@
                         <small>Satisfied</small>
                     </div>
                 </div>
-                <button class="feedback_btn" id="feedback_btn" >Send Review</button>
+                <button class="feedback_btn" id="feedback_btn">Send Review</button>
             </div>
         </div>
     </section>
 
     <footer class="dark:bg-slate-800">
         <p>Copyright &copy; 2024 | Belivers Code </p>
-     <div>
-        <i style="color: rgb(253, 0, 190); background-color: #fff;
+        <div>
+            <i style="color: rgb(253, 0, 190); background-color: #fff;
         box-shadow: 0 0 10px rgba(0,0,0,0.22);
         font-size: 30px;
         padding: 12px;
         border-radius: 50%;
         color: crimson;
         margin-right: 20px;;" class="fa-brands fa-instagram"></i>
-              <a href="https://www.instagram.com/codewithtda/">@insta/codewithtda</a>
-        
-      </div>
+            <a href="https://www.instagram.com/codewithtda/">@insta/codewithtda</a>
+
+        </div>
     </footer>
     <script src="js/script.js"></script>
     <script>
@@ -295,7 +301,7 @@
             }
         });
     </script>
-<script src="js/feeback.js" ></script>
+    <script src="js/feeback.js"></script>
 
 </body>
 
