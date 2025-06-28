@@ -26,7 +26,7 @@ menu.addEventListener('click',()=>{
 var links = [
     'https://codewithtda.github.io/greenade/',
     'https://codewithtda.github.io/QRCodeGenerator/',
-    'https://facebook.com',
+    'https://codewithtda.github.io/expanding-cards/',
     'https://google.com',
     'https://google.com',
     'https://google.com'
